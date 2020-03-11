@@ -4,7 +4,7 @@ Easy way to spin up a multi-node kubernetes cluster locally using vagrant.  Insp
 
 * clone repo
 * `vagrant up`
-* To specify number of child nodes `NODE_COUNT=2 vagrant up`
+* To specify number of worker nodes `NODE_COUNT=2 vagrant up`
 
 After `vagrant up` is finished run `KUBECONFIG=config kubectl get nodes` to verify it worked.  Should see:
 
