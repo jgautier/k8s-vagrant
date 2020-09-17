@@ -60,4 +60,5 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 
 # disable swap
+sudo sed -i '/ swap / s/^/#/' /etc/fstab
 swapoff -a
